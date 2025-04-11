@@ -1,4 +1,34 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: space-between;
+}
+header .left .ham-menu {
+  background-color: transparent;
+  border: none;
+}
+header .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+header .right .btn-login {
+  background-color: #B2FFF1;
+  height: 30%;
+  width: 80%;
+  border-radius: 30%;
+  border: none;
+  border-radius: 9999rem;
+  box-shadow: 0 8px 15px rgba(79, 70, 229, 0.3);
+  font-size: 1.2rem;
+  color: #514F4F;
+  font-weight: bold;
+}
+header .right .btn-cart {
+  background-color: transparent;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

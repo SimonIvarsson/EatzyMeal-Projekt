@@ -1,6 +1,52 @@
+// Importerar andra scss-filer
+@import 'variabler';
+@import 'mixins';
 
+body {
+    font-family: 'Inter', sans-serif;
+}
 
 header {
     display: flex;
     justify-content: space-between;
+
+    .left {
+        .ham-menu {
+            @include transparent-picture;
+        }
+    }
+    
+    .center {
+        // Placeholder
+    };
+
+    .right {
+        display: flex;               
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;               
+    
+        .btn-login {
+            // Knappen
+            background-color: $darker-blue;
+            height: 30%;
+            width: 80%;
+            border-radius: 30%;
+            border: none;
+            border-radius: 9999rem;
+            box-shadow: 0 8px 15px rgba(79, 70, 229, 0.3);
+            
+            // Texten
+            font-size: 1.2rem;
+            color: $secondary-fontColor;
+            font-weight: bold;
+
+            // Hover funktion
+            @include hover-btn-login;
+        }
+
+        .btn-cart {
+            @include transparent-picture;
+        }
+    }
 }
